@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-bebas {
+    font-family: 'Bebas Neue', cursive, sans-serif;
+    letter-spacing: 0.04em;
+  }
+  
+  .font-inter {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  .bg-metallic-gradient {
+    background: linear-gradient(135deg, #222008 0%, #141305 50%, #080802 100%);
+  }
+
+  .bg-yellow-brand {
+    background-color: #FFE500;
+  }
+
+  .text-yellow-brand {
+    color: #FFE500;
+  }
+
+  .border-yellow-brand {
+    border-color: #FFE500;
+  }
+
+  /* Superficie visual pulida */
+  .glass-card {
+    background: rgba(18, 18, 20, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  /* Microinteracción de elevación y GPU acceleration */
+  .glass-card-hover {
+    transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1),
+                border-color 0.28s cubic-bezier(0.16, 1, 0.3, 1),
+                box-shadow 0.28s cubic-bezier(0.16, 1, 0.3, 1),
+                background-color 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: transform;
+  }
+
+  .glass-card-hover:hover {
+    transform: translateY(-4px);
+    background: rgba(28, 28, 18, 0.95);
+    border-color: rgba(255, 229, 0, 0.5);
+    box-shadow: 0 16px 32px -8px rgba(255, 229, 0, 0.15),
+                0 4px 12px rgba(0, 0, 0, 0.6);
+  }
+
+  /* Anillos de foco consistentes para navegación por teclado A11y */
+  .focus-ring {
+    outline: none;
+  }
+  .focus-ring:focus-visible {
+    box-shadow: 0 0 0 2px #09090b, 0 0 0 4px #FFE500;
+  }
+
+  .text-glow-yellow {
+    text-shadow: 0 0 20px rgba(255, 229, 0, 0.5);
+  }
+
+  .box-glow-yellow {
+    box-shadow: 0 0 25px rgba(255, 229, 0, 0.3);
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #090909;
+}
+::-webkit-scrollbar-thumb {
+  background: #222222;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FFE500;
+}
+
+/* Selection */
+::selection {
+  background-color: #FFE500;
+  color: #000000;
+}

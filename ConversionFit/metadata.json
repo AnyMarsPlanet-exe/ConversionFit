@@ -1,0 +1,6 @@
+{
+  "name": "Conversion Fit Valledupar",
+  "description": "Gimnasio Premium en Valledupar, Colombia. Transforma tu cuerpo, transforma tu vida con instalaciones de vanguardia y entrenamiento personalizado.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
